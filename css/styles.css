@@ -281,4 +281,13 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .responsive{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .responsive img{
+        width: 70%;
+    }
 }
