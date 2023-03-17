@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App para un restaurante familiar</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="return">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
+                    class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg></a>
+        </div>
+        <nav class="navbar navbar-expand-md">
+            <button class="nav_icon navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <img class="logoProvisorio" src="img/logoprovisorio.png" alt="">
+
+            <div class="offcanvas offcanvas-end" id="offcanvasExample">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav justify-content-evenly">
+
+                    <li class="nav-item">
+                        <a class="nav-link navPages" aria-current="page" href="index.html"><strong>Home</strong></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link navPages" aria-current="page" href="about.html"><strong>About me</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="container">
+            <div class="logotype text-center">
+                <div>
+                    <h3>Diseño de una app para un restaurante familiar</h3>
+                </div>
+                <img class="imgTop imgRest" src="img/restaurante/logoRestaurante.png" alt="">
+            </div>
+            <hr>
+
+            <div class="introduccion">
+                <h4>Rol y responsabilidades</h4>
+
+                <p>Este proyecto fue elegido del curso "Diseño de experiencias del usuario UX" de Google en coursera. En
+                    estre proyecto trabaje como investigador principal UX y desarrollador. Fui jefe de interfaz de
+                    usuario,
+                    centrandome en el diseño visual creando prototipos de baja y alta fidelidad y la interaccion.</p>
+
+                <p><strong>Publico objetivo:</strong> He creado una aplicación para un restaurante
+                    familiar para alcanzar a mas clientes y que puedan
+                    realizar pedidos sin salir de sus casas. También que
+                    puedan enterarse de ofertas y otras novedades que
+                    tiene para ofrecer el restaurante. Queremos crear un
+                    producto que tenga éxito en el mercado y satisfacer a
+                    nuestro cliente y mejorar sus ventas.</p>
+
+                <p><strong>Desafio:</strong> Diseñar una aplicacion que se puedan realizar pedidos a especialmente para
+                    aquellas personas que trabajan mucho y disponen de poco tiempo de descanso para almorzar.</p>
+
+                <p><strong>Objetivo:</strong>Investigar las dificultades que
+                    puedan tener nuestros usuarios a la hora de
+                    realizar un pedido y también que sea intuitivo
+                    y adaptable para todos los usuarios.</p>
+            </div>
+
+            <div class="investigacion">
+                <h2 class="text-center">Investigacion</h2>
+                <div class="contenido">
+                    <p>Realicé entrevistas y creé mapas de empatía para entender a los usuarios para quienes diseño, así
+                        como sus
+                        necesidades. Un grupo de usuarios primario identificado a través de la investigación fueron los
+                        adultos
+                        trabajadores que no tienen tiempo para cocinar.
+                        Este grupo de usuarios confirmó las suposiciones iniciales sobre los clientes del restaurante,
+                        pero la
+                        investigación también reveló que también habían clientes habituales que les gustaría realizar
+                        pedidos para
+                        no tener que trasladarse.</p>
+                </div>
+            </div>
+
+            <div class="personas">
+                <h3>Personas entrevistadas</h3>
+                <div class="contenido">
+                    <p>
+                        Para esta investigacion se han realizado 5 entrevistas en las cuales Alex y Esteban se
+                        destacan.
+                    </p>
+                </div>
+                <div class="descripcionP cotainer d-flex">
+                    <p>Alex es un auxiliar administrativo
+                        que actualmente esta realizando la
+                        licenciatura en economia. Alex tiene
+                        poco tiempo entre clase y clase para
+                        prepararse su almuerzo por lo que prepara su comida el dia anterior.
+                    </p>
+                    <img class="persona" src="img/restaurante/Diapositiva2.PNG" alt="">
+                </div>
+            </div>
+
+            <div class="personas">
+                <div class="descripcionP cotainer d-flex">
+                    <p>Esteban es un diseñador web que vive con su pareja y sus 2 gatos. Esteban pide con frecuencia
+                        comida ya que dispone de poco tiempo en su descanso para almorzar pero siempre llegan tarde. Su
+                        plato favorito son las <strong>Milanesas con papas fritas</strong>.
+                    </p>
+                    <img class="persona" src="img/restaurante/Diapositiva1.PNG" alt="">
+                </div>
+            </div>
+
+            <div class="investigacion">
+                <h2 class="text-center">Comenzando el diseño</h2>
+                <h3>Esquemas de pagina</h3>
+                <div class="contenido">
+                    Tomarse el tiempo para elaborar en
+                    papel iteraciones de cada pantalla de la
+                    aplicación garantizó que los elementos
+                    que llegaron a convertirse en esquemas
+                    de página digitales fueran los correctos
+                    para abordar las dificultades del usuario.
+                    Para la pantalla de inicio, prioricé un
+                    proceso de pedidos rápido y simple para
+                    evitar que los usuarios perdieran tiempo.
+                </div>
+                <div class="descripcionP esquema cotainer text-center">
+                    <img class=" persona" src="img/restaurante/esquema de pagina.jpg" alt="">
+                    <p>Se utilizaron estrellas para marcar los elementos
+                        de cada boceto que se usarían en los primeros
+                        esquemas de página digitales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="investigacion">
+                <h3>Esquemas de paginas digitales (Prototipo de baja fidelidad)</h3>
+                <div class="contenido">
+                    A medida que la fase inicial del
+                    diseño continuaba, me aseguré de
+                    realizar los diseños de las
+                    pantallas según los comentarios y
+                    los resultados de la investigación
+                    de usuarios.
+
+                </div>
+                <div class="descripcionP cotainer text-center">
+                    <img class="persona" src="img/restaurante/maqueta1.png" alt="">
+
+                </div>
+            </div>
+
+            <div class="investigacion">
+                <h3>Estudio de facilidad de uso: Hallasgos</h3>
+                <div class="contenido contenHallasgos d-flex">
+                    <ul>
+                        <li>Se añadio 2 botones
+                            uno para añadirlo al
+                            carrito y otro para
+                            saber mas sobre la
+                            comida. Esto beneficia a que si
+                            ya eres un cliente
+                            recurrente ya sabras
+                            que contiene la comida.</li>
+                    </ul>
+                    <div class="descripcionP esquema cotainer text-center hallasgos Hallasgos2">
+                        <img class="persona" src="img/restaurante/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="investigacion">
+                <h2 class="text-center">Perfeccionando el diseño</h2>
+                <h3>Maquetas:</h3>
+                <div class="contenido descMaqueta">
+                    Los primeros diseños permitían acceder a la informacion del plato y ahora se añadio un boton para
+                    añadir al carrito directamente y otro para añadirlo a favoritos para acceder mas rapido al plato.
+                </div>
+                <div class="descripcionP esquema cotainer text-center maqueta">
+                    <img class="persona" src="img/recetas/maqueta2.png" alt="">
+                </div>
+            </div>
+
+            <div class="investigacion">
+                <h3>Esquemas de paginas digitales (Prototipo de alta fidelidad)</h3>
+                <div class="descripcionP cotainer text-center">
+                    <img class=" persona" src="img/restaurante/maqueta2.png" alt="">
+                </div>
+            </div>
+
+            <div class="personas">
+                <h3>Accesibilidad</h3>
+                <div class="contenido d-flex">
+                    <div class="card" style="width: 18rem; border:solid;">
+                        <div class="circulo"></div>
+                        <h3 class="numero">1</h3>
+                        <div class="card-body">
+                            <p class="card-text text-center">Se incorporo una fuente
+                                serif sans para que sea
+                                mas visibles para
+                                personas con poca
+                                visibilidad.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; border:solid;">
+                        <div class="circulo"></div>
+                        <h3 class="numero">2</h3>
+                        <div class="card-body">
+                            <p class="card-text text-center">
+                                Se usaron íconos para
+                                facilitar la navegación.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; border:solid;">
+                        <div class="circulo"></div>
+                        <h3 class="numero">3</h3>
+                        <div class="card-body">
+                            <p class="card-text text-center">Se usaron imágenes
+                                detalladas de las comidas
+                                para ayudar a todos los
+                                usuarios a comprender
+                                mejor los diseños.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investigacion">
+                    <h2 class="text-center">Conclusiones</h2>
+                    <h4>¿Que aprendi?</h4>
+                    <div class="contenido descMaqueta">
+                        <p><strong>Como primer proyecto de investigacion UX, aprendi muchisimas cosas, destaco los
+                                mapas de recorrido de usuarios, crear graficos
+                                de panorama general y de primer plano,
+                                ademas, como realizar un estudio de
+                                investigacion correctamente y la importancia
+                                de los feedbacks y saber como darlos y
+                                recibirlos.</strong></p>
+                    </div>
+                </div>
+
+                <div class="investigacion">
+                    <h4>Proximos pasos</h4>
+                    <div class="contenido d-flex">
+                        <div class="card" style="width: 18rem; border:solid;">
+                            <div class="circulo"></div>
+                            <h3 class="numero">1</h3>
+                            <div class="card-body">
+                                <p class="card-text text-center">Realizar unos ajustes con
+                                    respecto a como se toma
+                                    la información del usuario
+                                    para realizar los pedidos.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; border:solid;">
+                            <div class="circulo"></div>
+                            <h3 class="numero">2</h3>
+                            <div class="card-body">
+                                <p class="card-text text-center">
+                                    Realizar otra ronda de
+                                    estudios de facilidad de
+                                    uso para validar si las
+                                    dificultades
+                                    experimentadas por los
+                                    usuarios se abordaron de
+                                    manera efectiva.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem; border:solid;">
+                            <div class="circulo"></div>
+                            <h3 class="numero">3</h3>
+                            <div class="card-body">
+                                <p class="card-text text-center">Realizar más
+                                    investigaciones de
+                                    usuarios para identificar
+                                    nuevas necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investigacion text-center">
+                        <h3 class="">Si deseas conocer mas en detalle esta investigacion puedes descargar el caso
+                            practico</h3>
+                        <button class="btn descarga">
+                            <a class="nav-link "
+                            href="descargas/Caso practico de un restaurante.pdf" download="">
+                            <h5>Click aqui</h5>
+                        </a>
+                        </button>
+                    </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <div>
+                <p>© 2023. Todos los derechos reservados a Gaston Pucciarelli.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
+
+</html>
