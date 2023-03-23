@@ -7,6 +7,9 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
+    .navbar-nav{
+        justify-content: space-evenly;
+    }
 
     .encabezado {
         text-align: center;
@@ -274,15 +277,19 @@
 
     .tarjetaHome {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .tarjeta {
-        width: 70%;
+        width: 18em;
     }
 
     .imgHome {
-        width: 60%;
+        width: 8em;
     }
 
     .logoProvisorio {
@@ -322,12 +329,21 @@
     }
 
     .numero {
-        font-size: 20px;
+        font-size: 29px;
+        left: 4.8em;
+        top: 0.5em;
     }
 
-    .circulo {
-        width: 2em;
-        height: 2em;
+    .imgHome{
+        width: 8em;
+    }
+
+    .descCardHome{
+        font-size: 17px;
+    }
+
+    .fotoPerfil{
+        width: 10em;
     }
 }
 
@@ -366,5 +382,45 @@
     .circulo {
         width: 1em;
         height: 1em;
+    }
+
+    .imgHome{
+        width: 7em;
+    }
+
+    .descCardHome{
+        font-size: 16px;
+    }
+
+    .logoProvisorio{
+        width: 13em;
+    }
+
+    .tarjetaHome {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #offcanvasExample{
+        width: 14em;
+    }
+
+    .nav-item{
+        margin:1em 2em 1em 4em;
+    }
+
+    .numero {
+        font-size: 29px;
+        left: 4.8em;
+        top: 0.5em;
+    }
+
+    .fotoPerfil{
+        width: 10em;
     }
 }
