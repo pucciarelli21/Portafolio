@@ -157,6 +157,10 @@
         display: flex;
     }
 
+    .contenido .card {
+        width: 25em;
+    }
+
     .maqueta {
         margin: 3%;
     }
@@ -250,7 +254,24 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
     .tarjetaHome {
         display: grid;
         grid-template-columns: 1fr;
@@ -268,8 +289,8 @@
         width: 30%;
     }
 
-    .logotype {
-        width: 120%;
+    .logotype h3 {
+        font-size: 19.8px;
     }
 
     .personas {
@@ -279,15 +300,71 @@
 
     .contenido {
         display: grid;
-        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
-    .responsive{
+    .contenido .card {
+        width: 15em;
+        margin: 1.5em;
+    }
+
+    .responsive img {
+        width: 70%;
+    }
+
+    .return {
+        left: 90%;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .numero {
+        font-size: 20px;
+    }
+
+    .circulo {
+        width: 2em;
+        height: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .descripcionP {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .responsive img{
-        width: 70%;
+    .descripcionP img {
+        width: 20em;
+    }
+
+    .esquemaDigital img {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 15em;
+        padding-left: 1.8em;
+        margin: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .return {
+        left: 86%;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .numero {
+        font-size: 40px;
+    }
+
+    .circulo {
+        width: 1em;
+        height: 1em;
     }
 }
