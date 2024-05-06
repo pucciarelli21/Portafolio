@@ -74,6 +74,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.btn-prototipo{
+    display: flex;
+    margin:1rem 0rem 1rem
+}
+
+.btn-prototipo p{
+    padding-right: 1rem;
+}
+
+.btn-prototipo a:hover{
+    color: red;
+}
 
 @media screen and (max-width: 1200px) {
 
