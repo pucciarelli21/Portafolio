@@ -1,0 +1,119 @@
+.perfil-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 10rem 1rem 10rem;
+    max-width: 1300px;
+}
+
+.perfil-card img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.perfil-card .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px rgb(160, 159, 159);
+    padding: 1rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    max-width: 400px;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    box-shadow: 0px 0px 6px rgb(160, 159, 159);
+}
+
+.cards .card:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+.perfil-icons{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.perfil-icons a{
+    margin: 0rem 0.5rem;
+}
+
+.card-img-overlay h5:nth-child(1){
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-shadow: 0px 0px 3px 5px black;
+}
+
+.cards img{
+    filter:brightness(70%);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    justify-content:;
+}
+
+footer{
+    margin-top: 3rem;
+}
+
+footer div{
+    padding: 1rem;
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+ @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    .perfil-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 3rem 2rem 3rem;
+    }
+
+    .perfil-icons{
+        display: flex;
+        justify-content:end;
+    }
+
+    .perfil-icons a{
+        margin: 0rem 1rem;
+    }
+    
+    footer{
+        position: inherit;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .perfil-icons{
+        display: flex;
+        justify-content:center;
+    }
+}

@@ -1,0 +1,107 @@
+.cards-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.cards-list .card{
+    justify-content: center;
+    max-width: 300px;
+    height: 100px;
+    margin: 1rem;
+}
+
+.entrevistas-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.entrevistas-container div{
+    max-width: 500px;
+    margin: 1rem 0rem;
+}
+
+.entrevistas-container div p{
+    max-width: 450px;
+}
+
+.img-entrevista{
+    max-width: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.esquemas-fidelidad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0rem;
+}
+
+.esquemas-fidelidad img{
+    max-width: 150px;
+    margin: 0rem 2rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-list .card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.esquemas-papel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+.esquemas-papel img{
+    max-width: 400px;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .img-entrevista{
+        max-width: 450px;
+    }
+
+    .esquemas-fidelidad img{
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-entrevista{
+        max-width: 390px;
+        margin: 0.5rem 0rem;
+    }
+
+    .esquemas-fidelidad img{
+        max-width: 100px;
+        margin: 1rem 2rem;
+    }
+    
+    h3, h4{
+        text-align: center;
+    }
+
+    .esquemas-papel img{
+        margin: 1rem 0rem;
+    }
+}
