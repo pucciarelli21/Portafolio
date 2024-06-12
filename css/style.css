@@ -51,6 +51,16 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+
+    .proyects{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .proyects .card{
+        max-width: 178px;
+    }
+
     .icons{
         margin: 0rem 0.5rem 0.5rem 0rem;
     }

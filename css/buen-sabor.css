@@ -76,7 +76,8 @@
 
 .btn-prototipo{
     display: flex;
-    margin:1rem 0rem 1rem
+    margin:1rem 0rem 1rem;
+    justify-content: center;
 }
 
 .btn-prototipo p{
@@ -85,6 +86,10 @@
 
 .btn-prototipo a:hover{
     color: red;
+}
+
+h3{
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -115,5 +120,6 @@
 
     .esquemas-papel img{
         margin: 1rem 0rem;
+        max-width: 300px;
     }
 }
