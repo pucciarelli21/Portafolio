@@ -1,75 +1,83 @@
-section {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-
-.navbar a{
-    color: rgb(255, 255, 255);;
+*{
+    cursor: default;
 }
 
-.navbar a:hover{
-    color: red;
+h1{
+    text-align: center;
+}
+
+.card-conftainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-conftainer img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.description{
+    text-align: justify;
+}
+
+.proyect-container div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proyect-container a{
+    margin: 0.7rem;
+    border: 1px solid gray;
+}
+
+.proyect-container a:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.proyect-container img{
+    width: 170px;
 }
 
 footer{
-    background-color: rgba(0, 0, 0, 0.829);
-    padding: 2rem;
-    margin: 0;
+    margin-top: 2rem;
 }
 
-.contacto{
+footer div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.contacto a{
-    margin: 0;
-    color: #fff;
+.links-container a:hover{
+    color: rgb(226, 31, 31);
 }
 
-.icons{
-    margin: 0rem 1rem 0.5rem 0rem;
+.links-container *:hover, .proyect-container img:hover{
+    cursor: pointer;
 }
 
-.icons a{
-    margin: 0.5rem;
-}
-
-.icons a:hover{
-    opacity: 0.8;
-    color: red;
-}
-
-@media screen and (max-width: 1200px) {
-
+@media screen and (min-width: 768px) {
     
-    
-}
-
-@media screen and (max-width: 768px) {
-
-    .proyects{
+    .card-conftainer{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .proyects .card{
-        max-width: 178px;
+    .card-conftainer img{
+        width: 250px;
+        height: 250px;
     }
 
-    .icons{
-        margin: 0rem 0.5rem 0.5rem 0rem;
+    .description{
+        margin: 0rem 2rem 0rem 2rem;
     }
 
-    a{
-        margin: 0.3rem;
-    }
-
-    footer p{
-        font-size: 13px;
+    footer{
+        margin-top: 2rem;
     }
 }
