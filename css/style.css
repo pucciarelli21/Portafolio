@@ -2,82 +2,376 @@
     cursor: default;
 }
 
-h1{
-    text-align: center;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #f8f8f8;
 
-.card-conftainer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
+    align-items: center;
 }
 
-.card-conftainer img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px solid gray;
+.arrow-down{
+    display: none;
+
 }
 
-.description{
-    text-align: justify;
+
+.cv{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: #14A1F0 2px outset;
+    padding: 0.4rem;
+    margin-left: 50%;
 }
 
-.proyect-container div{
+.cv:hover{
+    opacity: 0.6;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h1, h3, h4{
+    font-weight: 600;
+}
+
+span, .card-title{
+    color: #14A1F0 ;
+    font-weight: 700;
+}
+
+.welcome-container{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.proyect-container a{
-    margin: 0.7rem;
-    border: 1px solid gray;
+.welcome-code h3,.welcome-code span{
+    font-size: 20px;
 }
 
-.proyect-container a:hover{
-    opacity: 0.7;
+.welcome-code a{
+    text-decoration:none;
+    color: white;
+}
+
+.welcome-code a h3{
+    padding-left:2rem;
+}
+
+.nav-link-welcome:hover{
+    opacity: 0.6;
     cursor: pointer;
 }
 
-.proyect-container img{
-    width: 170px;
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.welcome-code{
+    display: block;
+}
+
+.welcome, .welcome-code{
+    padding: 3rem;
+}
+
+.description-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+    padding: 0;
+}
+
+.technologies-container, .aboutme-container{
+    background-color: #272727;
+    margin: 0.6rem;
+    padding: 1rem;
+}
+
+.technologies-container, .aboutme-container span{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:750px;
+}
+
+.about-me img{
+    width: 110px;
+    border-radius: 2px;
+    margin: 0.5rem;
+}
+
+.about-me p{
+    margin: 0.5rem;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.technologies{
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+}
+
+.technologies .card{
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+    background-color: #272727;
+    border: none;
+    filter:grayscale(100%);
+}
+
+.technologies .card:hover{
+    filter: grayscale(0%);
+}
+
+.technologies .card img{
+    width: 60px;
+    height: 60px;
+}
+
+.proyects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.proyect-card{
+    display: flex;
+    max-width: 500px;
+    height: 190px;
+    margin: 0.7rem;
+
+    opacity: 0.3;
+
+    background-color: #272727;
+}
+
+.proyect-card:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.proyects img{
+
+    width: 250px;
+    height: 190px;
+    border-radius: 0;
+}
+
+.card-description{
+    display: grid;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    color: white;
+}
+
+.card-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icons img{
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
 }
 
 footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 2rem;
 }
 
 footer div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .links-container a:hover{
     color: rgb(226, 31, 31);
 }
 
-.links-container *:hover, .proyect-container img:hover{
+.links-container *:hover{
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 996px){
+
+    .welcome{
+        height: 75vh;
+        padding-left: 6rem;
+    }
+
+    .welcome, .welcome-code{
+        padding: 3.6rem;
+    }
+
+    .welcome-code{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .welcome{
+        padding-left: 3rem;
+    }
+
+    .welcome, .welcome-code{
+        padding: 0rem;
+    }
     
-    .card-conftainer{
-        display: flex;
-        flex-wrap: nowrap;
+    
+
+    .aboutme-container{
+        max-width: 750px;
+    }
+
+    .about-me img{
+        width: 140px;
+        border-radius: 2px;
+        margin: 0.5rem;
+    }
+
+    .about-me p{
+        max-width: 450px;
+    }
+
+    .technologies-container span, .aboutme-container span{
+        padding-left: 0rem;
+    }
+
+    .technologies-container span{
+        text-align: center;
+        margin: 0.2rem;
+    }
+    .technologies{
+        width: 250px;
         justify-content: center;
         align-items: center;
     }
 
-    .card-conftainer img{
+    .technologies .card{
+        width: 50px;
+        height: 50px;
+        margin: 0.8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+    .welcome{
+        height: 85vh;
+    }
+
+    .cv{
+        margin-left: 0%;
+    }
+
+    .arrow-down-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow-down{
+        display: block;
+        color: #14A1F0;
+    }
+
+    .aboutme-container, .technologies-container{
+        margin: 1rem 0rem;
+        text-align: center;
+        max-width: 380px;
+    }
+
+    .about-me{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-me img{
+        width: 180px;
+        border-radius: 2px;
+        margin: 0.5rem;
+    }
+
+    .about-me p{
+        max-width: 400px;
+    }
+
+    .technologies-container span, .aboutme-container span{
+        padding-left: 0rem;
+    }
+
+    .technologies{
         width: 250px;
-        height: 250px;
     }
 
-    .description{
-        margin: 0rem 2rem 0rem 2rem;
+    .technologies .card{
+        width: 50px;
+        height: 50px;
+        margin: 0.8rem;
     }
 
-    footer{
-        margin-top: 2rem;
+    .card-description{
+        font-size: 13px;
+    }
+
+    .proyect-card{
+        width: 380px;
+        height: 150px;
+        margin: 0.7rem 0rem;
+    }
+
+    .card-icons img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .proyect-card .card-img-top{
+        width: 150px;
+        height: 150px;
+    }
+
+    footer p{
+        font-size: 14px;
     }
 }
